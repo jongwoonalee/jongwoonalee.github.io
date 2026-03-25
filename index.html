@@ -13,36 +13,20 @@
             line-height: 1.6;
             color: #24292e;
         }
-        
-        .header {
-            margin-bottom: 40px;
-        }
-        
-        .intro {
-            margin-bottom: 30px;
-        }
-        
-        .name {
-            font-size: 32px;
-            margin: 0 0 20px 0;
-        }
-        
+        .header { margin-bottom: 40px; }
+        .intro { margin-bottom: 30px; }
+        .name { font-size: 32px; margin: 0 0 20px 0; }
         .links a {
             margin-right: 20px;
             color: #0366d6;
             text-decoration: none;
         }
-        
-        .links a:hover {
-            text-decoration: underline;
-        }
-        
+        .links a:hover { text-decoration: underline; }
         .research {
             margin: 40px 0;
             padding: 20px 0;
             border-top: 1px solid #eee;
         }
-        
         .project {
             display: grid;
             grid-template-columns: 200px 1fr;
@@ -51,153 +35,138 @@
             padding-bottom: 20px;
             border-bottom: 1px solid #eee;
         }
-        
         .project img {
             width: 200px;
             height: 150px;
             object-fit: cover;
         }
-        
-        .project-links {
-            margin-top: 10px;
-        }
-        
+        .project-links { margin-top: 10px; }
         .project-links a {
             color: #0366d6;
             text-decoration: none;
             margin-right: 15px;
         }
-        
-        .project-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .project-authors {
-            color: #666;
-            font-size: 0.9em;
-            margin-bottom: 10px;
-        }
+        .project-title { font-weight: bold; margin-bottom: 5px; }
+        .project-authors { color: #666; font-size: 0.9em; margin-bottom: 10px; }
+        .disabled-link { color: #999; }
     </style>
 </head>
 <body>
+
+    <!-- ===== HEADER ===== -->
     <div class="header">
         <div class="intro">
             <h1 class="name">Jongwoon Lee</h1>
-            <p> MSCS, University of Rochester (Rochester, NY, USA)(Present)-<br>
-                Clinical Assistant Professor of Practice, Department of Pathology, Korea University Guro Hospital (South Korea) 2024.03-2025.08<br>
-                PhD Candidate in Brain and Cognitive Engineering, Korea University,(Seoul, South Korea) 2024.09-2025.08 </p>
+            <p>
+                MSCS, University of Rochester (Rochester, NY, USA) (Present)<br>
+                Clinical Assistant Professor of Practice, Department of Pathology, Korea University Guro Hospital (South Korea) 2024.03–2025.08<br>
+                PhD Candidate in Brain and Cognitive Engineering, Korea University (Seoul, South Korea) 2024.09–2025.08
+            </p>
             <div class="links">
                 <a href="https://www.linkedin.com/in/jongwoon-lee-818037245//">LinkedIn</a>
-                 <a href="https://docs.google.com/document/d/1SBHpJ9OHn8Pqu_hN_qaTGoLyE4Ad9U2a/edit">CV</a>
-                  <a href="https://scholar.google.com/citations?user=J4Io5jQAAAAJ&hl=ko">Google Scholar</a>
+                <a href="https://docs.google.com/document/d/1SBHpJ9OHn8Pqu_hN_qaTGoLyE4Ad9U2a/edit">CV</a>
+                <a href="https://scholar.google.com/citations?user=J4Io5jQAAAAJ&hl=ko">Google Scholar</a>
             </div>
         </div>
     </div>
 
+    <!-- ===== RESEARCH BIO ===== -->
     <div class="research">
         <h2>Research</h2>
-    <p>I specialize in developing and implementing deep learning architectures for medical image analysis, with a particular focus on pathological classification and clinical applications. My research integrates pathology expertise with artificial intelligence to advance healthcare through innovative computational approaches.<br>
-    I completed graduate coursework in Computer Vision, Artificial Intelligence, and Machine Learning at Korea University with a perfect GPA (4.5/4.5). You can find my implementations and related resources on request or through my GitHub.</p>
-    <p>Note: I publish under both "Jongwon Lee" and "Jongwoon Lee". Both names represent the same Korean characters (이종원) but reflect different romanization conventions.</p>
-</div>
+        <p>I specialize in developing and implementing deep learning architectures for medical image analysis, with a particular focus on pathological classification and clinical applications. My research integrates pathology expertise with artificial intelligence to advance healthcare through innovative computational approaches.<br>
+        I completed graduate coursework in Computer Vision, Artificial Intelligence, and Machine Learning at Korea University with a perfect GPA (4.5/4.5). You can find my implementations and related resources on request or through my GitHub.</p>
+        <p>Note: I publish under both "Jongwon Lee" and "Jongwoon Lee". Both names represent the same Korean characters (이종원) but reflect different romanization conventions.</p>
+    </div>
+
+    <!-- ===== USCAP 2026 ===== -->
     <div class="research">
-    <h2>Conference Presentations (Primary Presenter / Corresponding Author)</h2>
+        <h2>Conference Presentations (Primary Presenter / Corresponding Author)</h2>
 
-    <div class="project">
-        <img src="images/USCAP2026_FOV.png" alt="USCAP 2026 FOV Segmentation">
-        <div class="project-content">
-            <div class="project-title">
-                Field-of-View Impact on Multi-Class Tissue Segmentation: A Systematic Analysis of Size-Dependent Detection Performance Across Multiple Cancer Types
-            </div>
-            <div class="project-authors"> D Jo, Jongwoon Lee et al. (First Author)</div>
-            <p>USCAP 2026, Texas, USA — <strong>Platform Presentation</strong></p>
-            <div class="project-links (PENDING_not yet disclosed)">
-                <a href="research/USCAP2026_FOV_Segmentation.pdf">Poster (PDF)</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="images/USCAP2026_Nectin4.png" alt="USCAP 2026 Nectin-4 H&E">
-        <div class="project-content">
-            <div class="project-title">
-                End-to-End Artificial Intelligence Model Identifying High Nectin-4 Expression from H&E Images as Low-Recurrence Risk in Non-Muscle Invasive Bladder Cancer
-            </div>
-            <div class="project-authors">Heesoo Kim et al. (Corresponding Author)</div>
-            <p>USCAP 2026, Texas, USA — <strong>Poster Presentation</strong></p>
-            <div class="project-links">
-                <a href="research/USCAP2026_Nectin4_HE.pdf">Poster (PDF)</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="project">
-        <img src="images/USCAP2026_TIL.png" alt="USCAP 2026 TIL Bladder">
-        <div class="project-content">
-            <div class="project-title">
-                Artificial Intelligence-Assessed Central Tumor-Infiltrating Lymphocytes Predict Recurrence-Free Survival in Transurethral Resection of Bladder Tumor Specimens
-            </div>
-            <div class="project-authors">Suk-young Lee et al. (Corresponding Author)</div>
-            <p>USCAP 2026, Texas, USA — <strong>Poster Presentation</strong></p>
-            <div class="project-links">
-                <a href="research/USCAP2026_TIL_Bladder.pdf">Poster (PDF)</a>
-            </div>
-        </div>
-        
-    <div class="projects">
         <div class="project">
-            <img src="images/ECP.png" alt="European Congress of Pathology Best Poster Presentation Session 2025">
-    <div class="project-content">
-      <h3 class="project-title">
-        Artificial Intelligence-Driven LRRC15 Expression and Clinicopathological Prediction in Colorectal Carcinoma Using Weakly Supervised Learning
-      </h3>
-      <p class="project-authors">Jongwon Lee et al.</p>
-      <p class="project-venue">
-        <time datetime="2025">ECP 2025</time> — 
-        <span class="award">🏆 First Best Poster Prize</span>
-      </p>
-
-      <ul class="project-links">
-        <li>
-          <a href="research/ECP2025_LRRC15.pdf" target="_blank" rel="noopener">
-            Poster (PDF)
-          </a>
-        </li>
-        <li>
-          <a href="code/lrrc15_detection_yolo_training_pipeline.py">
-            Code: LRRC15 detection (YOLO)
-          </a>
-        </li>
-        <li>
-          <span class="disabled-link">
-            Code: MIL HE→LRRC15 grading (under revision, not available)
-          </span>
-        </li>
-      </ul>
-    </div>
+            <img src="images/USCAP2026_FOV.png" alt="USCAP 2026 FOV Segmentation">
+            <div class="project-content">
+                <div class="project-title">
+                    Field-of-View Impact on Multi-Class Tissue Segmentation: A Systematic Analysis of Size-Dependent Detection Performance Across Multiple Cancer Types
+                </div>
+                <div class="project-authors">D Jo, Jongwoon Lee et al. (First Author)</div>
+                <p>USCAP 2026, Texas, USA — <strong>Platform Presentation</strong></p>
+                <div class="project-links">
+                    <span class="disabled-link">Poster (PDF) — pending disclosure</span>
+                </div>
             </div>
         </div>
-    <div class="projects">
+
+        <div class="project">
+            <img src="images/USCAP2026_Nectin4.png" alt="USCAP 2026 Nectin-4 H&E">
+            <div class="project-content">
+                <div class="project-title">
+                    End-to-End Artificial Intelligence Model Identifying High Nectin-4 Expression from H&E Images as Low-Recurrence Risk in Non-Muscle Invasive Bladder Cancer
+                </div>
+                <div class="project-authors">Heesoo Kim et al. (Corresponding Author)</div>
+                <p>USCAP 2026, Texas, USA — <strong>Poster Presentation</strong></p>
+                <div class="project-links">
+                    <a href="research/USCAP2026_Nectin4_HE.pdf">Poster (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project">
+            <img src="images/USCAP2026_TIL.png" alt="USCAP 2026 TIL Bladder">
+            <div class="project-content">
+                <div class="project-title">
+                    Artificial Intelligence-Assessed Central Tumor-Infiltrating Lymphocytes Predict Recurrence-Free Survival in Transurethral Resection of Bladder Tumor Specimens
+                </div>
+                <div class="project-authors">Suk-young Lee et al. (Corresponding Author)</div>
+                <p>USCAP 2026, Texas, USA — <strong>Poster Presentation</strong></p>
+                <div class="project-links">
+                    <a href="research/USCAP2026_TIL_Bladder.pdf">Poster (PDF)</a>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- end USCAP 2026 section -->
+
+    <!-- ===== PREVIOUS WORK ===== -->
+    <div class="research">
+        <h2>Selected Projects</h2>
+
+        <div class="project">
+            <img src="images/ECP.png" alt="ECP 2025 Best Poster">
+            <div class="project-content">
+                <h3 class="project-title">
+                    Artificial Intelligence-Driven LRRC15 Expression and Clinicopathological Prediction in Colorectal Carcinoma Using Weakly Supervised Learning
+                </h3>
+                <div class="project-authors">Jongwon Lee et al.</div>
+                <p>ECP 2025 — 🏆 First Best Poster Prize</p>
+                <div class="project-links">
+                    <a href="research/ECP2025_LRRC15.pdf" target="_blank" rel="noopener">Poster (PDF)</a>
+                    <a href="code/lrrc15_detection_yolo_training_pipeline.py">Code: LRRC15 detection (YOLO)</a>
+                    <span class="disabled-link">Code: MIL HE→LRRC15 grading (under revision)</span>
+                </div>
+            </div>
+        </div>
+
         <div class="project">
             <img src="images/OO.png" alt="Oral Oncology August 2025">
             <div class="project-content">
-                <div class="project-title">Assessment of established prognostic factors and artificial intelligence-based evaluation of tumor-infiltrating lymphocytes in oral tongue squamous cell carcinoma  
+                <div class="project-title">
+                    Assessment of Established Prognostic Factors and Artificial Intelligence-Based Evaluation of Tumor-Infiltrating Lymphocytes in Oral Tongue Squamous Cell Carcinoma
                 </div>
                 <div class="project-authors">Jongwon Lee, Ming Fan et al.</div>
-                <p>Oral Oncology Auguest 2025</p>
+                <p>Oral Oncology, August 2025</p>
                 <div class="project-links">
                     <a href="Papers/OO.pdf">Paper</a>
                 </div>
             </div>
         </div>
-    <div class="projects">
+
         <div class="project">
-            <img src="images/Bladder_MIL_USCAP.png" alt="USCAP2025">
+            <img src="images/Bladder_MIL_USCAP.png" alt="USCAP 2025">
             <div class="project-content">
-                <div class="project-title">Comparative Analyses of Attention-Based Multiple Instance Learning Methods for Bladder Cancer Pathologic T-Category Classification  
+                <div class="project-title">
+                    Comparative Analyses of Attention-Based Multiple Instance Learning Methods for Bladder Cancer Pathologic T-Category Classification
                 </div>
-                <div class="project-authors">DoYeon Lee et al., Corresponding Author, Jongwon Lee</div>
+                <div class="project-authors">DoYeon Lee et al., Corresponding Author: Jongwon Lee</div>
                 <p>USCAP 2025: Employing attention-based MIL techniques for Megapatch Classification of pT Category of Bladder Cancer with TURB specimens.</p>
                 <div class="project-links">
                     <a href="research/USCAP_Bladder_Weakly_2025.pdf">USCAP poster</a>
@@ -205,13 +174,14 @@
                 </div>
             </div>
         </div>
-    <div class="projects">
+
         <div class="project">
             <img src="images/Bladder-cancer.jpg" alt="Bladder Cancer Analysis">
             <div class="project-content">
-                <div class="project-title">Artificial Intelligence Assisted Tumor Infiltrating Lymphocytes Assessment as Predictors of Tumor Recurrence in Transurethral Resection of Bladder Cancer  
+                <div class="project-title">
+                    Artificial Intelligence Assisted Tumor Infiltrating Lymphocytes Assessment as Predictors of Tumor Recurrence in Transurethral Resection of Bladder Cancer
                 </div>
-                <div class="project-authors">Suk-young Lee et al., Corresponding Author, Jongwon Lee</div>
+                <div class="project-authors">Suk-young Lee et al., Corresponding Author: Jongwon Lee</div>
                 <p>ASDP 2025: Novel approach for predicting bladder cancer recurrence using weakly supervised learning on transurethral resection specimens.</p>
                 <div class="project-links">
                     <a href="research/ASDP2024_BladderYOLO_Oct2024.pdf">ASDP poster</a>
@@ -222,42 +192,43 @@
         <div class="project">
             <img src="images/breast-her2.png" alt="HER2 Scoring Study">
             <div class="project-content">
-                <div class="project-title">Vision Transformer versus ResNet18, DensNet-201 for HER2 Immunohistochemical Scoring</div>
-                <div class="project-authors">Jongwoon Lee, et al.</div>
+                <div class="project-title">Vision Transformer versus ResNet18, DenseNet-201 for HER2 Immunohistochemical Scoring</div>
+                <div class="project-authors">Jongwoon Lee et al.</div>
                 <p>KSP 2023: Comparative analysis of Vision Transformer and DenseNet-201 architectures for automated HER2 scoring in breast cancer specimens.</p>
                 <div class="project-links">
-                    <a href="/research/KSP_Poster_VT_JLee_HJLedit(10.12.2023).pptx.pdf">KSP poster</a>
-                   <a href="https://github.com/jongwoonalee/jongwoonalee.github.io/blob/main/code/2024BrainEng_HJJ/HybridViT.ipynb">code (Hybrid ViT)</a>
-                     <a href="/research/ResNet18vsViTvsHybridViT_121824_KU.pdf">presentation</a>
+                    <a href="research/KSP_Poster_VT_JLee_HJLedit(10.12.2023).pptx.pdf">KSP poster</a>
+                    <a href="https://github.com/jongwoonalee/jongwoonalee.github.io/blob/main/code/2024BrainEng_HJJ/HybridViT.ipynb">Code (Hybrid ViT)</a>
+                    <a href="research/ResNet18vsViTvsHybridViT_121824_KU.pdf">Presentation</a>
                 </div>
             </div>
         </div>
- 
+
         <div class="project">
             <img src="images/Feature_overlay_PDX.jpg" alt="PDX Research">
             <div class="project-content">
                 <div class="project-title">Factors Associated with PDX Engraftment Success in Breast Cancer</div>
-                <div class="project-authors">Jongwoon Lee, et al.</div>
+                <div class="project-authors">Jongwoon Lee et al.</div>
                 <p>Breast Cancer Research 2024: Comprehensive analysis of factors influencing successful patient-derived xenograft engraftment in breast cancer models.</p>
                 <div class="project-links">
-                    <a href="/Papers/ResNet_PDX.pdf">paper</a>
-                    <a href="/research/sabcs2023_jwl.pdf">SABCS 2023</a>
+                    <a href="Papers/ResNet_PDX.pdf">Paper</a>
+                    <a href="research/sabcs2023_jwl.pdf">SABCS 2023</a>
                 </div>
             </div>
         </div>
 
-           <div class="project">
-            <img src="images/TongueTIL.jpg" alt="Tongue Cancer TIL Research with YOLOv8">
+        <div class="project">
+            <img src="images/TongueTIL.jpg" alt="Tongue Cancer TIL Research">
             <div class="project-content">
-                <div class="project-title">Artificial Intelligence-assisted evaluation of TILs in Tongue Cancer</div>
-                <div class="project-authors">Jongwoon Lee, et al.</div>
-                <p>Breast Cancer Research 2024: Comprehensive analysis of factors influencing successful patient-derived xenograft engraftment in breast cancer models.</p>
+                <div class="project-title">Artificial Intelligence-Assisted Evaluation of TILs in Tongue Cancer</div>
+                <div class="project-authors">Jongwoon Lee et al.</div>
+                <p>ASCO Breakthrough 2024</p>
                 <div class="project-links">
-                    <a href="/research/TongueTIL_ASCOBreakthrough_Aug2024.pdf">ASCO Breakthrough</a>
+                    <a href="research/TongueTIL_ASCOBreakthrough_Aug2024.pdf">ASCO Breakthrough</a>
                 </div>
             </div>
         </div>
-    </div>
+
+    </div><!-- end Selected Projects -->
+
 </body>
 </html>
-
