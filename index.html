@@ -49,6 +49,26 @@
         .project-title { font-weight: bold; margin-bottom: 5px; }
         .project-authors { color: #666; font-size: 0.9em; margin-bottom: 10px; }
         .disabled-link { color: #999; }
+
+        /* --- added --- */
+        .project.no-image { grid-template-columns: 1fr; }
+        .news { margin: 30px 0 40px 0; }
+        .news h2 { font-size: 20px; margin-bottom: 10px; }
+        .news ul { list-style: none; padding-left: 0; margin: 0; }
+        .news li {
+            display: grid;
+            grid-template-columns: 90px 1fr;
+            gap: 12px;
+            padding: 6px 0;
+            border-bottom: 1px solid #f2f2f2;
+        }
+        .news .date { color: #666; font-size: 0.9em; white-space: nowrap; }
+        .contact { margin-top: 14px; font-size: 0.95em; }
+        @media (max-width: 600px) {
+            .project { grid-template-columns: 1fr; }
+            .project img { width: 100%; }
+            .news li { grid-template-columns: 1fr; gap: 0; }
+        }
     </style>
 </head>
 <body>
@@ -57,47 +77,146 @@
     <div class="header">
         <div class="intro">
             <h1 class="name">Jongwoon Lee</h1>
-            <p>
-<div class="bio-content">
-    <p>
-        <strong>MSCS</strong>, University of Rochester (Rochester, NY, USA) <span class="status">(Present)</span>
-    </p>
 
-    <p>
-        I work on domain shift  and  representation learning , focusing on recovering latent signals under distribution shift. I am particularly interested in  continual learning. <br>
-        While my work spans medical imaging, my core focus is building robust deep learning models for real-world, noisy data.
-    </p>
-   <div class="affiliations">
-        <strong>Previous Affiliations:</strong>
-        <ul>
-            <li>Clinical Assistant Professor of Practice, Dept. of Pathology, Korea University Guro Hospital (2024.03–2025.08)</li>
-            <li>PhD Candidate in Brain and Cognitive Engineering, Korea University (2024.09–2025.08)</li>
-        </ul>
-    </div>
-            </p>
+            <div class="bio-content">
+                <p>
+                    <strong>M.S. in Computer Science</strong>, University of Rochester (Rochester, NY, USA)<br>
+                    Incoming <strong>Graduate Research Assistant</strong>, Lab of Prof. Sean Crowell (Fall 2026)
+                </p>
+
+                <p>
+                    I am a board-certified pathologist with seven years of clinical practice, now a full-time
+                    M.S. student in Computer Science at the University of Rochester. I build machine learning
+                    methods that hold up when the deployment hospital, scanner, or instrument is not the one
+                    the model was trained on.
+                </p>
+
+                <p>
+                    My work spans <strong>cross-hospital adaptation of pathology foundation models</strong>,
+                    <strong>weakly supervised prognostic modeling</strong> on whole-slide images, and
+                    <strong>structured prediction with language models</strong> for clinical text.
+                    I am applying to CS PhD programs for Fall 2027, with interests in domain shift,
+                    out-of-distribution generalization, and continual learning.
+                </p>
+
+                <div class="affiliations">
+                    <strong>Affiliations:</strong>
+                    <ul>
+                        <li>PhD Candidate (on leave), Brain and Cognitive Engineering, Korea University (2024.09–)</li>
+                        <li>Clinical Assistant Professor of Practice, Dept. of Pathology, Korea University Guro Hospital (2024.03–2025.08)</li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="links">
+                <a href="mailto:alyssa8921@gmail.com">Email</a>
+                <a href="CV_Jongwoon_Lee.pdf">CV</a>
+                <a href="https://scholar.google.com/citations?user=J4Io5jQAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://github.com/jongwoonalee">GitHub</a>
                 <a href="https://www.linkedin.com/in/jongwoon-lee-818037245/">LinkedIn</a>
-                <a href="https://docs.google.com/document/d/1SBHpJ9OHn8Pqu_hN_qaTGoLyE4Ad9U2a/edit">CV</a>
-                <a href="https://scholar.google.com/citations?user=J4Io5jQAAAAJ&hl=ko">Google Scholar</a>
+            </div>
+            <div class="contact">
+                alyssa8921@gmail.com &nbsp;·&nbsp; Rochester, NY, USA
             </div>
         </div>
     </div>
 
-<div class="research">
+    <!-- ===== NEWS ===== -->
+    <div class="news">
+        <h2>News</h2>
+        <ul>
+            <li><span class="date">Aug 2026</span>
+                <span>Starting as Graduate Research Assistant in Prof. Sean Crowell's lab (Fall 2026),
+                working on cross-instrument domain shift.</span></li>
+            <li><span class="date">Jul 2026</span>
+                <span><em>Where to Decompose: Expert Composition and Structured Prediction for
+                Electrodiagnostic Interpretation</em> submitted to <strong>AAAI-27</strong>.</span></li>
+            <li><span class="date">Jun 2026</span>
+                <span><em>Separating Scanner from Signal: FFT-Based Low-Frequency Adaptation for
+                Cross-Hospital IHC Expression Grading</em> accepted to
+                <strong>CLINICCAI at MICCAI 2026</strong> (Strasbourg, September 2026).</span></li>
+            <li><span class="date">2026</span>
+                <span>Two papers accepted at <strong>Laboratory Investigation</strong>
+                (field-of-view effects in tissue segmentation; AI-assessed TILs in bladder cancer).</span></li>
+            <li><span class="date">Jan 2026</span>
+                <span>Started the M.S. in Computer Science at the University of Rochester.</span></li>
+        </ul>
+    </div>
+
+    <div class="research">
         <h2>Research</h2>
-        
+
         <p>
-            I design and implement deep learning models for learning from <strong>indirect and weakly supervised signals</strong> under real-world data variability. 
+            I design and implement deep learning models for learning from
+            <strong>indirect and weakly supervised signals</strong> under real-world data variability.
         </p>
 
         <p>
-            I completed graduate coursework in <strong>Computer Vision, Artificial Intelligence, and Machine Learning</strong> at Korea University with a <strong>perfect GPA (4.5/4.5)</strong>. 
-            My implementations and related resources are available on my GitHub, accessible via the links below,</a> or upon request.
+            I completed graduate coursework in <strong>Computer Vision, Artificial Intelligence, and
+            Machine Learning</strong> at Korea University with a <strong>perfect GPA (4.5/4.5)</strong>.
+            My implementations and related resources are available on my GitHub, accessible via the links
+            above, or upon request.
         </p>
 
         <blockquote style="font-size: 0.9em; color: #666; border-left: 3px solid #ccc; padding-left: 10px;">
             <strong>Note:</strong> I publish under both "Jongwon Lee" and "Jongwoon Lee". Both names represent the same Korean characters (이종원) but reflect different romanization conventions.
         </blockquote>
+    </div>
+
+    <!-- ===== 2026 PAPERS ===== -->
+    <div class="research">
+        <h2>Papers (2026)</h2>
+
+        <div class="project no-image">
+            <div class="project-content">
+                <div class="project-title">
+                    Where to Decompose: Expert Composition and Structured Prediction for Electrodiagnostic Interpretation
+                </div>
+                <div class="project-authors">Jongwoon Lee (First Author)</div>
+                <p>
+                    Submitted to <strong>AAAI-27</strong>. A two-stage pipeline that converts free-text
+                    EMG/NCS studies into structured diagnostic slots and back into natural-language reports,
+                    composing six domain-specialist models through a rule-based arbiter.
+                </p>
+            </div>
+        </div>
+
+        <div class="project no-image">
+            <div class="project-content">
+                <div class="project-title">
+                    Separating Scanner from Signal: FFT-Based Low-Frequency Adaptation for Cross-Hospital IHC Expression Grading
+                </div>
+                <div class="project-authors">Jongwoon Lee (First Author)</div>
+                <p>
+                    <strong>CLINICCAI at MICCAI 2026</strong>, Strasbourg, France — Poster, September 2026.
+                    Label-free adaptation of frozen pathology foundation models across three hospital cohorts.
+                </p>
+                <div class="project-links">
+                    <span class="disabled-link">Poster (PDF) — after presentation</span>
+                    <span class="disabled-link">Code — coming soon</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project no-image">
+            <div class="project-content">
+                <div class="project-title">
+                    Field-of-View Impact on Multi-Class Tissue Segmentation: A Systematic Analysis of Size-Dependent Detection Performance Across Multiple Cancer Types
+                </div>
+                <div class="project-authors">D Jo, Jongwoon Lee et al. (First Author)</div>
+                <p><em>Laboratory Investigation</em>, 2026.</p>
+            </div>
+        </div>
+
+        <div class="project no-image">
+            <div class="project-content">
+                <div class="project-title">
+                    Artificial Intelligence-Assessed Central Tumor-Infiltrating Lymphocytes Predict Recurrence-Free Survival in Transurethral Resection of Bladder Tumor Specimens
+                </div>
+                <div class="project-authors">S Lee et al. (Corresponding Author)</div>
+                <p><em>Laboratory Investigation</em>, 2026.</p>
+            </div>
+        </div>
     </div>
 
     <!-- ===== USCAP 2026 ===== -->
