@@ -177,6 +177,7 @@
 
         .badge.ok { color: var(--ok); background: var(--ok-soft); }
         .badge.wait { color: var(--wait); background: var(--wait-soft); }
+        .badge.spot { color: var(--bg); background: var(--accent); letter-spacing: 0.02em; }
 
         /* Research projects */
         .projects { display: grid; gap: 14px; }
@@ -294,6 +295,9 @@
     <section>
         <h2>News</h2>
         <ul class="news">
+            <li><span class="date">Nov 2026</span>
+                <span><em>Field-of-View Impact on Multi-Class Tissue Segmentation</em> <span class="badge ok">Accepted</span> at
+                <strong>Laboratory Investigation</strong>.</span></li>
             <li><span class="date">Sep 2026</span>
                 <span>Oral presentation at the <strong>MÉTIS workshop, MICCAI 2026</strong> (Strasbourg):
                 <em>Label-Free Adaptation of IHC Grading Across Hospitals</em>.</span></li>
@@ -301,11 +305,10 @@
                 <span>Poster at <strong>CLINICCAI, MICCAI 2026</strong> (Strasbourg).</span></li>
             <li><span class="date">Sep 2026</span>
                 <span>Joined Prof. Sean Crowell's lab as a Graduate Research Assistant, working on
-                cross-instrument domain shift in satellite CO₂ retrieval.</span></li>
+                temporal distribution shift in satellite CO₂ retrieval.</span></li>
             <li><span class="date">Sep 2026</span>
-                <span><em>Where to Decompose</em> advanced to Phase 2 review at <strong>AAAI-27</strong>.</span></li>
-            <li><span class="date">Sep 2026</span>
-                <span><em>Neither Space Alone</em> <span class="badge ok">Accepted</span> at the
+                <span><a href="https://doi.org/10.48550/arXiv.2610.22756"><em>Neither Space Alone</em></a> <span class="badge ok">Accepted</span>
+                <span class="badge spot">&#9733; Spotlight</span> at the
                 <strong>ASCI Workshop, NeurIPS 2026</strong>.</span></li>
             <li><span class="date">Jun 2026</span>
                 <span><em>Separating Scanner from Signal</em> <span class="badge ok">Accepted</span> at
@@ -324,11 +327,15 @@
 
             <div class="proj">
                 <div class="proj-head">
-                    <span class="proj-title">Cross-Instrument Transfer in Satellite CO₂ Retrieval</span>
+                    <span class="proj-title">Machine Learning Retrieval of CO₂ from Satellite Spectra</span>
                     <span class="proj-when">Sep 2026 –</span>
                 </div>
                 <div class="proj-where">Lab of Prof. Sean Crowell, University of Rochester</div>
-                <p>Domain shift between instruments in remote-sensing retrieval of atmospheric CO₂.</p>
+                <p>
+                    Neural networks that retrieve column CO₂ from OCO-2 satellite spectra. I study how a model trained on
+                    2015–2016 data degrades on later years as atmospheric CO₂ rises (temporal distribution shift), and develop
+                    a lightweight daily update of the last layer with calibrated uncertainty estimates.
+                </p>
             </div>
 
             <div class="proj">
@@ -338,8 +345,9 @@
                 </div>
                 <div class="proj-where">Dept. of Neurology (Prof. D. Herrmann) and Lab of Prof. Jiebo Luo, Dept. of Computer Science, University of Rochester</div>
                 <p>
-                    Detecting nerve endings across serial reflectance confocal sections of human skin: hard-negative
-                    fine-tuning of a YOLO detector and cross-slice association of 2D detections into 3D objects.
+                    A 3D detection and association framework for sparse nerve endings across serial reflectance confocal
+                    sections of human skin: cross-slice linking under scan drift and suppression of shallow-layer false
+                    positives using volumetric context.
                 </p>
             </div>
 
@@ -399,12 +407,18 @@
             <li>
                 <div class="pub-title">Neither Space Alone: Input- and Feature-Space Correction for Cross-Hospital IHC Grading</div>
                 <div class="pub-authors"><b>Jongwon Lee</b>*, Jhair Gallardo</div>
-                <div class="pub-venue"><em>AI at Scale for Clinical Impact (ASCI) Workshop, NeurIPS 2026</em> <span class="badge ok">Accepted</span></div>
+                <div class="pub-venue"><em>AI at Scale for Clinical Impact (ASCI) Workshop, NeurIPS 2026</em> <span class="badge ok">Accepted</span> <span class="badge spot">&#9733; Spotlight</span></div>
+                <div class="pub-links"><a href="https://doi.org/10.48550/arXiv.2610.22756">arXiv</a></div>
             </li>
             <li>
                 <div class="pub-title">Where to Decompose: Expert Composition and Structured Prediction for Electrodiagnostic Interpretation</div>
                 <div class="pub-authors"><b>Jongwon Lee</b>*</div>
-                <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI-27)</em> <span class="badge wait">Under review · Phase 2</span></div>
+                <div class="pub-venue">Manuscript, 2026 <span class="badge wait">Under review</span></div>
+            </li>
+            <li>
+                <div class="pub-title">From Sparse Slices to 3D Counts: Learning to Verify Microscopic Objects</div>
+                <div class="pub-authors"><b>Jongwon Lee</b>*</div>
+                <div class="pub-venue">Manuscript, 2026 <span class="badge wait">Under review</span></div>
             </li>
         </ul>
 
@@ -412,8 +426,8 @@
         <ul class="pubs">
             <li>
                 <div class="pub-title">Field-of-View Impact on Multi-Class Tissue Segmentation: A Systematic Analysis of Size-Dependent Detection Performance Across Multiple Cancer Types</div>
-                <div class="pub-authors">D Jo, <b>Jongwon Lee</b>*, et al.</div>
-                <div class="pub-venue"><em>Laboratory Investigation</em>, 2026 <span class="badge wait">Minor revision</span></div>
+                <div class="pub-authors">D Jo*, <b>Jongwon Lee</b>*, et al.</div>
+                <div class="pub-venue"><em>Laboratory Investigation</em>, 2026 <span class="badge ok">Accepted</span></div>
             </li>
             <li>
                 <div class="pub-title">Artificial Intelligence-Assessed Tumor Central Tumor-Infiltrating Lymphocytes Predict Recurrence-Free Survival in Transurethral Resection of Bladder Tumor Specimens</div>
@@ -544,7 +558,7 @@
         </div>
     </section>
 
-    <footer>Last updated October 2026</footer>
+    <footer>Last updated November 2026</footer>
 </div>
 </body>
 </html>
