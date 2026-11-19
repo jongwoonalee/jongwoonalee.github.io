@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jongwoon Lee</title>
-    <meta name="description" content="Jongwoon Lee (publishes as Jongwon Lee). Machine learning under domain shift for medical imaging. M.S. Computer Science, University of Rochester.">
+    <meta name="description" content="Jongwoon Lee (also publishes as Jongwon Lee) is a pathologist and computer science master’s student at the University of Rochester studying machine learning under domain shift.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
@@ -248,7 +248,7 @@
         <div>
             <h1 class="name">Jongwoon Lee</h1>
             <p class="alias">이종원 · also publishes as “Jongwon Lee”</p>
-            <p class="role"><strong>M.S. in Computer Science</strong>, University of Rochester <span>· Advisor: Prof. Jiebo Luo</span></p>
+            <p class="role"><strong>M.S. student in Computer Science</strong>, University of Rochester <span>· Advisor: Prof. Jiebo Luo</span></p>
             <p class="role"><strong>Graduate Research Assistant</strong>, Lab of Prof. Sean Crowell, University of Rochester</p>
             <p class="role"><strong>Ph.D. Candidate</strong> (on leave), Brain and Cognitive Engineering, Korea University</p>
             <div class="links">
@@ -265,29 +265,34 @@
     <section>
         <h2>About</h2>
         <p>
-            I build machine learning methods that hold up when the deployment hospital, scanner,
-            or instrument is not the one the model was trained on.
+            I am a board-certified pathologist and a master’s student in computer science at the University of Rochester.
+            I study how to adapt machine learning models when data come from a new hospital, scanner, or instrument.
+        </p>
+        <p>
+            In computational pathology, I examine how a model’s field of view affects its ability to segment tissue
+            structures of different sizes. I also use image analysis to study the prognostic value of lymphocyte
+            infiltration in the center of bladder tumors and the association between LRRC15-positive fibroblasts
+            and immune cells in colorectal cancer.
         </p>
         <ul class="interests">
-            <li>Domain shift &amp; OOD generalization</li>
+            <li>Generalization under domain shift</li>
             <li>Continual learning</li>
             <li>Weakly supervised learning</li>
             <li>Foundation model adaptation</li>
-            <li>Structured prediction with LLMs</li>
+            <li>Structured prediction with large language models</li>
         </ul>
         <p>
-            I started in computational pathology during my Ph.D. in Medicine, then entered the
-            Department of Brain and Cognitive Engineering at Korea University, where I completed graduate
-            coursework in Pattern Recognition, Computer Vision, Machine Learning, and Mathematical
-            Foundations of AI (GPA 4.5/4.5). Years of research in academic pathology give me access to
-            multi-hospital data and the judgment to evaluate what actually transfers.
+            I began working in computational pathology during my Ph.D. in Medicine. At Korea University’s Department of Brain and
+            Cognitive Engineering, I completed graduate coursework in Pattern Recognition, Computer Vision,
+            Machine Learning, and Mathematical Foundations of AI (GPA 4.5/4.5). Through collaborations
+            in academic pathology, I evaluate models on data from multiple hospitals.
         </p>
         <p>
             I am applying to <strong>CS Ph.D. programs for Fall 2027</strong>.
         </p>
         <p class="note">
-            I hold three separately conferred Korean degrees (M.D., M.Sc. in Medicine, Ph.D. in Medicine) and am
-            board-certified in pathology. “Jongwon” and “Jongwoon” are two romanizations of the same name (이종원).
+            I earned three degrees in Korea (M.D., M.Sc. in Medicine, and Ph.D. in Medicine).
+            “Jongwon” and “Jongwoon” are two romanizations of the same name (이종원).
         </p>
     </section>
 
@@ -296,8 +301,14 @@
         <h2>News</h2>
         <ul class="news">
             <li><span class="date">Nov 2026</span>
-                <span><em>Field-of-View Impact on Multi-Class Tissue Segmentation</em> <span class="badge ok">Accepted</span> at
-                <strong>Laboratory Investigation</strong>.</span></li>
+                <span><a href="#bladder-lymphocytes">Prognostic Significance of AI-Quantified Central Tumor-Infiltrating Lymphocytes in Bladder Cancer</a><br>
+                <em>Laboratory Investigation</em> · Corresponding author · <span class="badge ok">Accepted</span></span></li>
+            <li><span class="date">Nov 2026</span>
+                <span><a href="#segmentation-field-of-view">Field-of-View Impact on Multiclass Tissue Segmentation: Systematic Analysis Across Structure Sizes and Multiple Cancer Types</a><br>
+                <em>Laboratory Investigation</em> · Co-first author · <span class="badge ok">Accepted</span></span></li>
+            <li><span class="date">Nov 2026</span>
+                <span><a href="#colorectal-fibroblasts">Association of LRRC15+ Cancer-Associated Fibroblasts with Immune Cells in Colorectal Cancer: Multiplex IHC and AI-Assisted Study</a><br>
+                <em>Journal of Gastroenterology and Hepatology</em> · Co-first author · <span class="badge ok">Accepted</span></span></li>
             <li><span class="date">Sep 2026</span>
                 <span>Oral presentation at the <strong>MÉTIS workshop, MICCAI 2026</strong> (Strasbourg):
                 <em>Label-Free Adaptation of IHC Grading Across Hospitals</em>.</span></li>
@@ -394,7 +405,7 @@
     <!-- PUBLICATIONS -->
     <section>
         <h2>Publications</h2>
-        <p class="legend">* first author &nbsp; † corresponding author</p>
+        <p class="legend">* First author &nbsp; ‡ Co-first author &nbsp; † Corresponding author</p>
 
         <h3>Conference and Workshop Papers</h3>
         <ul class="pubs">
@@ -424,20 +435,20 @@
 
         <h3>Journal Articles</h3>
         <ul class="pubs">
-            <li>
-                <div class="pub-title">Field-of-View Impact on Multi-Class Tissue Segmentation: A Systematic Analysis of Size-Dependent Detection Performance Across Multiple Cancer Types</div>
-                <div class="pub-authors">D Jo*, <b>Jongwon Lee</b>*, et al.</div>
-                <div class="pub-venue"><em>Laboratory Investigation</em>, 2026 <span class="badge ok">Accepted</span></div>
-            </li>
-            <li>
-                <div class="pub-title">Artificial Intelligence-Assessed Tumor Central Tumor-Infiltrating Lymphocytes Predict Recurrence-Free Survival in Transurethral Resection of Bladder Tumor Specimens</div>
+            <li id="bladder-lymphocytes">
+                <div class="pub-title">Prognostic Significance of AI-Quantified Central Tumor-Infiltrating Lymphocytes in Bladder Cancer</div>
                 <div class="pub-authors">S Lee, <b>Jongwon Lee</b>†, et al.</div>
-                <div class="pub-venue"><em>Laboratory Investigation</em>, 2026 <span class="badge wait">Major revision</span></div>
+                <div class="pub-venue"><em>Laboratory Investigation</em> · Corresponding author · <span class="badge ok">Accepted Nov 2026</span></div>
             </li>
-            <li>
-                <div class="pub-title">The Expression and Clinical Relevance of LRRC15+ Cancer-Associated Fibroblasts in Colorectal Cancer</div>
-                <div class="pub-authors">Y Yang, D Jung, <b>Jongwon Lee</b>*, et al.</div>
-                <div class="pub-venue"><em>Journal of Gastroenterology and Hepatology</em>, 2026 <span class="badge wait">Major revision</span></div>
+            <li id="segmentation-field-of-view">
+                <div class="pub-title">Field-of-View Impact on Multiclass Tissue Segmentation: Systematic Analysis Across Structure Sizes and Multiple Cancer Types</div>
+                <div class="pub-authors">D Jo‡, <b>Jongwon Lee</b>‡, et al.</div>
+                <div class="pub-venue"><em>Laboratory Investigation</em> · Co-first author · <span class="badge ok">Accepted Nov 2026</span></div>
+            </li>
+            <li id="colorectal-fibroblasts">
+                <div class="pub-title">Association of LRRC15+ Cancer-Associated Fibroblasts with Immune Cells in Colorectal Cancer: Multiplex IHC and AI-Assisted Study</div>
+                <div class="pub-authors">Y Yang, D Jung, <b>Jongwon Lee</b>‡, et al.</div>
+                <div class="pub-venue"><em>Journal of Gastroenterology and Hepatology</em> · Co-first author · <span class="badge ok">Accepted Nov 2026</span></div>
             </li>
             <li>
                 <div class="pub-title">Assessment of Established Prognostic Factors and Artificial Intelligence-Based Evaluation of Tumor-Infiltrating Lymphocytes in Oral Tongue Squamous Cell Carcinoma</div>
